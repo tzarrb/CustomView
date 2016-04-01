@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2015 Akexorcist
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<resources>
+
+    <declare-styleable name="BatteryView">
+        <attr name="bvReverse" format="boolean" />
+        <attr name="bvProgress" format="float" />
+        <attr name="bvMax" format="float" />
+        <attr name="bvContainerPadding" format="dimension" />
+        <attr name="bvBackgroundPadding" format="dimension" />
+        <attr name="bvRadius" format="dimension" />
+        <attr name="bvContainerStrokeWidth" format="dimension" />
+        <attr name="bvContainerStrokeColor" format="color" />
+        <attr name="bvProgressDrawable" format="integer" />
+        <attr name="bvBackgroundDrawable" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BikeColorSelector">
+        <attr name="csHeight" format="dimension" />
+        <attr name="csPadding" format="dimension" />
+        <attr name="csRadius" format="dimension" />
+        <attr name="csTitle" format="string" />
+        <attr name="csSelectedColor" format="color" />
+        <attr name="csShowIconSrc" format="integer" />
+        <attr name="csHideIconSrc" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="cpBgColor" format="color"/>
+        <attr name="cpFgColorStart" format="color" />
+        <attr name="cpFgColorEnd" format="color" />
+        <attr name="cpStrokeWidth" format="dimension" />
+        <attr name="cpPercent" format="integer" />
+        <attr name="cpStartAngle" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TrackEndButton">
+        <attr name="teBgColor" format="color"/>
+        <attr name="teInnerColor" format="color" />
+        <attr name="teOuttrColor" format="color" />
+        <attr name="teinnerWidth" format="dimension" />
+        <attr name="teOutterWidth" format="dimension" />
+        <attr name="teIconSrc" format="integer" />
+        <attr name="teDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DashBoardView">
+        <attr name="dbMax" format="integer" value="100" />
+        <attr name="dbProgress" format="integer" value="0" />
+        <attr name="dbactiveColor" format="color" />
+        <attr name="dbInactiveColor" format="color" />
+        <attr name="dbRingBias" format="float" />
+        <attr name="dbSectionRatio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IconRoundCornerProgress">
+        <attr name="rcIconSrc" format="integer" />
+        <attr name="rcIconSize" format="dimension" />
+        <attr name="rcIconWidth" format="dimension" />
+        <attr name="rcIconHeight" format="dimension" />
+        <attr name="rcIconPadding" format="dimension" />
+        <attr name="rcIconPaddingLeft" format="dimension" />
+        <attr name="rcIconPaddingRight" format="dimension" />
+        <attr name="rcIconPaddingTop" format="dimension" />
+        <attr name="rcIconPaddingBottom" format="dimension" />
+        <attr name="rcIconBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRoundCornerProgress">
+        <attr name="rcTextProgressColor" format="color" />
+        <attr name="rcTextProgressSize" format="dimension" />
+        <attr name="rcTextProgressMargin" format="dimension" />
+        <attr name="rcTextProgress" format="string" />
+    </declare-styleable>
+
+</resources>

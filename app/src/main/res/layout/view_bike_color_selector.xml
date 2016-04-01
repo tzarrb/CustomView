@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--card_view:cardBackgroundColor="#ffffff"-->
+        <!--card_view:cardCornerRadius="20dp"-->
+        <!--card_view:cardElevation="1dp">-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bike_color_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="2dp"
+        card_view:cardBackgroundColor="#ffffffff"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/bike_color_top_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/bike_color_selector_img"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_margin="6dp"
+                    card_view:cardBackgroundColor="#efffff"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="1dp"/>
+
+                <TextView
+                    android:id="@+id/bike_color_selector_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="云马C1系列"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_dark"/>
+
+                <ImageView
+                    android:id="@+id/bike_color_selector_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_triangle_down"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bike_color_selector_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_light"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ListView
+                        android:id="@+id/bike_color_selector_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:divider="@null"
+                        android:dividerHeight="0dp">
+
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
